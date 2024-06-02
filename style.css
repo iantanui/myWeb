@@ -178,11 +178,11 @@ footer {
 .contact-form form {
   background: whitesmoke;
   padding: 20px;
-  border-radius: 5px;
-
 }
 
 .form-group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
@@ -192,8 +192,6 @@ footer {
 
 form input,
 form textarea {
-  width: 90%;
-  padding: 10px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -211,6 +209,8 @@ form button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  align-self: center;
+  width: 100%;
 }
 
 form button:hover {
@@ -225,27 +225,27 @@ form button:hover {
 }
 
 .social-icons {
-    list-style: none;
-    display: flex;
-    padding: 16px;
-    margin-top: 20px;
-    justify-content: center;
-    gap: 16px;
+  list-style: none;
+  display: flex;
+  padding: 16px;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 16px;
 }
 
 .social-icons li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .social-icons a {
-    text-decoration: none;
-    color: #555;
-    display: flex;
-    align-items: center;
+  text-decoration: none;
+  color: #555;
+  display: flex;
+  align-items: center;
 }
 
 .social-icons a i {
-    margin-right: 5px;
-    font-size: 44px;
-    color: darkblue;
+  margin-right: 5px;
+  font-size: 44px;
+  color: darkblue;
 }
