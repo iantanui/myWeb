@@ -37,17 +37,16 @@ nav ul li a:hover {
   background: #555;
 }
 
-header {
-  padding: 40px;
+header p {
+  padding: 16px;
 }
 
 header h1 {
-  margin: 0;
+  padding: 16px;
   text-align: center;
 }
 
 main {
-  padding: 40px;
   flex: 1;
   padding-bottom: 80px;
   justify-content: center;
@@ -58,28 +57,39 @@ main section {
 }
 
 main h2 {
+  padding: 16px;
   text-align: center;
 }
 
+main p {
+  padding: 16px;
+}
+
+.intro {
+  color: white;
+  background: rgb(13, 20, 54);
+}
 .services {
-  padding: 20px 0;
+  padding: 16px;
   background: whitesmoke;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
   margin-top: 20px;
 }
 
 .service {
+  flex: 0 0 calc(33.33% - 20px);
   background: #fff;
   padding: 20px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -100,7 +110,7 @@ main h2 {
 }
 
 footer {
-  background: #212020;
+  background: rgb(3, 7, 24);
   color: whitesmoke;
   padding: 10px;
   position: absolute;
@@ -108,6 +118,7 @@ footer {
   width: 100%;
   text-align: center;
 }
+
 .mission p {
   text-align: center;
 }
@@ -223,6 +234,10 @@ form button:hover {
   border-radius: 5px;
 }
 
+.contact-info h3 {
+  text-align: center;
+}
+
 .social-icons {
   list-style: none;
   display: flex;
@@ -250,6 +265,10 @@ form button:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .services-grid {
+    flex-direction: column;
+  }
+
   .team-grid {
     flex-direction: column;
   }
