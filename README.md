@@ -1,5 +1,17 @@
 # myWeb
 
+create a simple website for a business. The website will consist of three pages: Home, About, and Contact. Each page will include specific content and will be styled using CSS to ensure a cohesive and visually appealing design.
+
+# Files to Create
+HTML Files
+
+index.html: The Home page
+about.html: The About Us page
+contact.html: The Contact page
+
+CSS File
+styles.css: The Styles file
+
 # Home Page (index.html):
 
 Include a navigation menu with links to the Home, About, and Contact pages.
