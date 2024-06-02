@@ -1,6 +1,89 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 8px;
+  padding: 0;
   line-height: 1.6;
+  background: whitesmoke;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  background: #cbcaca;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 15px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: #555;
+}
+
+header {
+    padding: 16px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    padding: 16px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+main h2 {
+    text-align: center;
+}
+
+footer {
+    background: #212020;
+    color: whitesmoke;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #212020;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
 }
