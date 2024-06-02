@@ -59,6 +59,43 @@ main h2 {
   text-align: center;
 }
 
+.services {
+    padding: 20px 0;
+    background: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .service {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .service h3 {
+    margin: 10px 0;
+  }
+  
+  .service p {
+    color: #555;
+  }
 footer {
   background: #212020;
   color: whitesmoke;
@@ -68,6 +105,7 @@ footer {
   width: 100%;
   text-align: center;
 }
+
 
 form {
   display: flex;
@@ -118,40 +156,3 @@ form button:hover {
   background: #555;
 }
 
-.services {
-  padding: 20px 0;
-  background: whitesmoke;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.service {
-  background: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-}
-
-.service:hover {
-  transform: translateY(-10px);
-}
-
-.service-icon {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-.service h3 {
-  margin: 10px 0;
-}
-
-.service p {
-  color: #555;
-}
