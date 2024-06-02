@@ -154,7 +154,6 @@ footer {
   margin: 0 auto;
   display: flex;
   align-items: stretch;
-  gap: 10%;
 }
 
 .contact-form,
@@ -248,4 +247,18 @@ form button:hover {
   margin-right: 5px;
   font-size: 44px;
   color: darkblue;
+}
+
+@media screen and (max-width: 600px) {
+  .team-grid {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    margin-right: 0;
+  }
 }
