@@ -36,36 +36,58 @@ nav ul li a {
 nav ul li a:hover {
   background: #555;
 }
+
 header {
   padding: 40px;
-  display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+header h1 {
+  text-align: center;
 }
 
 .header-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
+  max-width: 1200px;
+  gap: 40px;
+  margin: auto;
+}
+
+.header-desc {
+  flex: 1;
+  padding: 16px;
+}
+
+.header-desc p{
+  text-align: justify;
 }
 
 .header-text {
   flex: 1;
-  padding: 20px;
+  padding: 8px;
+  text-align: left;
 }
 
-header p {
-  padding: 16px;
+.header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header h1 {
-  padding: 16px;
-  text-align: center;
+.header-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 main {
   flex: 1;
-  padding-bottom: 80px;
+  padding:40px 40px 80px 40px;
   justify-content: center;
 }
 
@@ -83,7 +105,9 @@ main p {
 }
 
 .intro {
+  padding: 40px;
   color: white;
+  border-radius: 8px;
   background: rgb(13, 20, 54);
 }
 .services {
@@ -182,16 +206,17 @@ footer {
   margin: 0 auto;
   display: flex;
   align-items: stretch;
+  gap: 10%;
 }
 
 .contact-form,
 .contact-info {
   flex: 1;
-  padding: 20px;
+  padding: 16px;
 }
 
 .contact-form {
-  padding: 20px;
+  padding: 16px;
   overflow: auto;
   max-height: 500px;
   margin-right: 20px;
@@ -203,28 +228,33 @@ footer {
 }
 
 .contact-form form {
+  display: flex;
+  flex-direction: column;
   background: whitesmoke;
   padding: 20px;
 }
 
 .form-group {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   margin-bottom: 20px;
+  align-items: center;
 }
 
-.form label {
-  margin-bottom: 5px;
+.form-group label {
+  flex: 0 0 150px;
+  margin-right: 10px;
 }
 
-form input,
-form textarea {
+.form-group input,
+.form-group textarea {
+  flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-form textarea {
+.form textarea {
   resize: vertical;
 }
 
@@ -246,7 +276,7 @@ form button:hover {
 
 .contact-info {
   background: whitesmoke;
-  padding: 20px;
+  padding: 16px;
   max-height: 500px;
   border-radius: 5px;
 }
@@ -282,6 +312,9 @@ form button:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
   .services-grid {
     flex-direction: column;
   }
