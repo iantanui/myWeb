@@ -53,7 +53,7 @@ header h1 {
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  gap: 40px;
+  gap: 10px;
   margin: auto;
 }
 
@@ -62,7 +62,11 @@ header h1 {
   padding: 16px;
 }
 
-.header-desc p{
+.header-desc h3 {
+  text-align: center;
+}
+
+.header-desc p {
   text-align: justify;
 }
 
@@ -87,7 +91,7 @@ header h1 {
 
 main {
   flex: 1;
-  padding:40px 40px 80px 40px;
+  padding: 40px 40px 80px 40px;
   justify-content: center;
 }
 
@@ -164,12 +168,16 @@ footer {
   text-align: center;
 }
 
-.mission,
+.mission {
+  color: white;
+  border-radius: 8px;
+  background: rgb(13, 20, 54);
+}
+
 .team {
   padding: 16px;
   background: whitesmoke;
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 
 .team-grid {
@@ -207,6 +215,7 @@ footer {
   display: flex;
   align-items: stretch;
   gap: 10%;
+  padding: 16px;
 }
 
 .contact-form,
@@ -216,22 +225,19 @@ footer {
 }
 
 .contact-form {
-  padding: 16px;
   overflow: auto;
-  max-height: 500px;
   margin-right: 20px;
 }
 
 .contact-form h2,
 .contact-info h2 {
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
   background: whitesmoke;
-  padding: 20px;
 }
 
 .form-group {
@@ -242,8 +248,7 @@ footer {
 }
 
 .form-group label {
-  flex: 0 0 150px;
-  margin-right: 10px;
+  flex: 0 0 80px;
 }
 
 .form-group input,
@@ -259,7 +264,7 @@ footer {
 }
 
 form button {
-  margin-top: 10px;
+  margin: 0;
   padding: 10px;
   background: #212020;
   color: whitesmoke;
@@ -277,7 +282,6 @@ form button:hover {
 .contact-info {
   background: whitesmoke;
   padding: 16px;
-  max-height: 500px;
   border-radius: 5px;
 }
 
@@ -288,8 +292,7 @@ form button:hover {
 .social-icons {
   list-style: none;
   display: flex;
-  padding: 16px;
-  margin-top: 20px;
+  padding-bottom: 40px;
   justify-content: center;
   gap: 16px;
 }
