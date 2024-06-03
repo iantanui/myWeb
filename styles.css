@@ -36,6 +36,23 @@ nav ul li a {
 nav ul li a:hover {
   background: #555;
 }
+header {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header-text {
+  flex: 1;
+  padding: 20px;
+}
 
 header p {
   padding: 16px;
